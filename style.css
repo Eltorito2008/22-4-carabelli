@@ -1,0 +1,120 @@
+/* Estilos base para la página del museo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0e1c8; /* Fondo beige */
+    color: #333;
+}
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección hero: título, texto e imagen principal */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-text { flex: 1 1 320px; }
+
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: #5d4037;
+}
+
+.hero p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hero-image {
+    width: min(100%, 480px);
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Tarjetas de contenido: secciones con texto e imágenes */
+.card {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #6f4e37;
+}
+
+.card p, .card li {
+    line-height: 1.7;
+}
+
+.card img, .section-image {
+    width: 100%;
+    display: block;
+    margin: 18px 0;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card ul { padding-left: 20px; }
+
+/* Cajas de imágenes con bordes y leyendas */
+.image-box {
+    background-color: rgba(255, 243, 224, 0.95);
+    border: 1px solid rgba(149, 115, 81, 0.3);
+    border-radius: 18px;
+    padding: 16px;
+    max-width: 100%;
+    margin: 18px auto;
+}
+
+.image-box img { border-radius: 12px; }
+
+.image-box figcaption {
+    margin: 12px 0 0;
+    font-size: 0.95rem;
+    color: #6b4a37;
+    line-height: 1.5;
+}
+
+.nosotros .image-box img {
+    transform: rotate(180deg);
+    display: block;
+    width: 80%;
+    max-width: 420px;
+    margin: 0 auto !important;
+}
+
+/* Pie de página */
+.footer {
+    margin-top: 32px;
+    padding: 18px 24px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    color: #5f4339;
+}
+
+/* Responsive: ajusta hero en móviles */
+@media (max-width: 700px) {
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .hero-image { width: 100%; }
+}

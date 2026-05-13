@@ -1,0 +1,28 @@
+Página Web del Museo Dr. Frutos E. Ortiz
+
+Este proyecto es una página web simple para el Museo de Brandsen, creada por estudiantes de 7mo año.
+
+Estructura del HTML (index.html)
+
+DOCTYPE y head: Define el documento HTML5, con meta tags para charset y viewport, título "Museo de Brandsen", y enlace al CSS.
+Body: Contiene un div con clase "pagina" que centra el contenido.
+Header (.hero): Sección principal con título, descripción y imagen del museo.
+Section (.card.nosotros): Sobre los estudiantes que hicieron el proyecto.
+Section (.card.info): Información general del museo.
+Section (.card.coleccion): Colecciones destacadas con lista y imagen.
+Section (.card.redes): Enlaces a redes sociales (Instagram y Facebook).
+Footer: Créditos y enlaces sociales adicionales.
+
+Estilos CSS (style.css)
+
+El CSS está optimizado para ser conciso (menos de 40 líneas) y bien documentado.
+
+stilos base: Fondo beige, fuente Arial, contenedor centrado.
+Sección hero: Flexbox para layout responsive, con texto e imagen.
+Tarjetas (.card): Fondos blancos translúcidos, bordes redondeados, sombras.
+Imágenes: Bordes redondeados, sombras, responsive.
+Cajas de imágenes (.image-box): Bordes y leyendas.
+Pie de página: Centrado, fondo similar.
+Responsive: En móviles, hero se apila verticalmente.
+
+Para ver la página, abre index.html en un navegador. Requiere las imágenes en la carpeta img/.
